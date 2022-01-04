@@ -21,3 +21,9 @@
 	font-family:Lexend;
 	src:url('../vendor/fonts/LexendDeca-Regular.ttf');
 }
+
+/* Inconsolata */
+@font-face{
+	font-family:Lexend;
+	src:url('../vendor/font/Inconsolata-VariableFont_wdth,wght.ttf');
+}
