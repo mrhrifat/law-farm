@@ -1,0 +1,23 @@
+/* Abel */
+@font-face{
+	font-family: Abel;
+	src:url('../vendor/fonts/Abel-Regular.ttf');
+}
+
+/* Algreya */
+@font-face{
+	font-family: Alegreya;
+	src: url('../vendor/fonts/AlegreyaSans-Regular.ttf');
+}
+
+/* Josefin */
+@font-face{
+	font-family: Josefin;
+	src:url('../vendor/fonts/JosefinSans-Regular.ttf');
+}
+
+/* Lexend */
+@font-face{
+	font-family:Lexend;
+	src:url('../vendor/fonts/LexendDeca-Regular.ttf');
+}

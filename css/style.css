@@ -1,0 +1,411 @@
+/*
+    Author: Rakibul Hassan Rifat
+
+*/
+
+/*
+	==========Index==========
+	01) Import Section
+	02) Variable Section
+	03) Global CSS
+	04) Header Section
+	05) Hero Section
+	06) About Us Section
+	07) Practice Area Section
+	08) Lawyers Section
+	09) Clients Section 
+	10) Publication Section
+	11) FAQ Section
+	12) Contact Section
+	13) Footer Section
+	========================
+*/
+
+/*==========01) Import Section Start==========*/
+@import url('../css/fonts.css');
+/*==========01) Import Section End==========*/
+
+/*==========02) Variable Section Start==========*/
+:root{
+
+	/*Theme Colors*/
+	--text-gray:#3f4954;
+	--text-light:#686666da;
+	--bg-color:#0f0f0f;
+	--white:#ffffff;
+	--mid-night: #104f55;
+
+	/*Gradient Color*/
+	--sky:linear-gradient(120deg,#a1c4fd 0%, #c2e9fb 100%);
+
+	--shadow-color:0px 10px 30px rgba(118,85,225,0.3);
+	--box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+	/*=========Font Family==========*/
+
+	/* Abel */
+	--Abel:'Abel', cursive;
+
+	/* Alegreya */
+	--Alegreya:'Alegreya', cursive;
+	
+	/* Anton */
+	--Anton:'Anton', cursive;
+	
+	/* Cormorant */
+	--Cormorant:'Cormorant', cursive;
+
+	/* Inconsolata */
+	--Inconsolata:'Inconsolata', cursive;
+	
+	/* Josefin */
+	--Josefin:'Josefin', cursive;
+
+	/* Lexend */
+	--Lexend:'Lexend', cursive;
+
+	/* Literata */
+	--Literata:'Literata',cursive;
+
+	/* Livvic */
+	--Livvic:'Livvic', cursive;
+
+	/* Overlock */
+	--Overlock:'Overlock', cursive;
+
+	/* Rancho */
+	--Rancho:'Rancho', cursive;
+
+	/* Roboto */
+	--Roboto:'Roboto', cursive;
+
+	/* Sriracha */
+	--Sriracha:'Sriracha', cursive;
+
+	/* Ubuntu */
+	--Ubuntu:'Ubuntu', cursive;
+}
+/*==========02) Variable Section End==========*/
+
+
+/*==========03) Global CSS Section Start=========*/
+section{
+	padding: 80px 0;
+}
+.img-center{
+	display: block;
+	margin:0 auto;
+}
+.no-padding{
+	padding: 0;
+}
+h1{
+	font-family: var(--Josefin);
+	font-size: 2.5rem;
+}
+h2{
+	font-family:var(--Lexend);
+	font-size: 2rem;
+}
+h3{
+	font-family: var(--Abel);
+	font-size: 1.5rem;
+}
+p{
+	font-family: var(--Abel);
+	font-size: 16px;
+	line-height: 30px;
+}
+h5 {
+	font-size: 22px;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+h6{
+	font-weight: 700;
+	font-family: 'Varela Round', sans-serif;
+}
+label{
+	font-family: var(--Alegreya);
+}
+.btn-custom{
+	display: block;
+	margin: 0 auto;
+	padding: 6px 20px;
+	background-color: #e8bf5d;
+	border: none;
+	color: #111;
+}
+.btn-custom:hover {
+	background-color:#111 ;
+	color:#e8bf5d ;
+}
+.btn:active,
+.btn:focus{
+	outline:none !important;
+	box-shadow: none;
+}
+.form-control:focus{
+	border-color: #80bdff;
+	box-shadow: none !important
+}
+.navbar_fixed{
+	position: fixed;
+	width: 100%;
+	top: -1px;
+	left: 0;
+	right: 0;
+	background: #ffffff;
+	box-shadow: var(--box-shadow);
+	z-index: 999;
+	transition: all 1s ease;
+	padding: 0.5rem 1rem;
+}
+/*==========03) Global CSS Section End=========*/
+
+/*==========04) Header Section Start==========*/
+header .navbar-brand{
+	position: relative;
+}
+header .navbar-brand img{
+	width: 45%;
+}
+header .navbar-brand span {
+	width: 10px;
+	height: 10px;
+	background: #e8bf5d;
+	position: absolute;
+	bottom: 10px;
+	border-radius: 100%;
+	right: 110px;
+}
+header ul li a{
+	padding: 10px;
+	color: #111;
+	text-transform: uppercase;
+	font-family: var(--Inconsolata);
+	font-weight: 600;
+}
+header ul li a:hover{
+	border-bottom: 2px solid #e8bf5d;
+	cursor: pointer;
+}
+header ul li a.active{
+	color: #e8bf5d !important;
+	border-bottom: 2px solid #e8bf5d;
+}
+/*==========04) Header Section End==========*/
+
+/*==========05) Hero Section Start==========*/
+#hero{
+	background: url(../img/hero.png);
+	background-size: cover;
+	/*height: 100vh;*/
+	background-repeat: no-repeat;
+	width: 100%;
+}
+#hero .hero-content {
+	padding-top: 315px;
+}
+#hero .hero-heading,
+.about-heading,
+.clients-heading,
+.practice-heading,
+.publication-heading,
+.faq-heading,
+.contact-heading {
+	padding: 0 15px;
+	border-left: 2px solid #e8bf5d;
+	line-height: 10px;
+}
+#hero .hero-heading h1 {
+	letter-spacing: 5px;
+}
+#hero .btn{
+	margin: 0;
+	border-radius: 20px;
+	padding: 10px 25px;
+}
+/*==========05) Hero Section End==========*/
+
+/*==========06) About Us Section Start==========*/
+.about-heading, 
+.lawyers-heading, 
+.publication-heading {
+	background: url(../img/section-background.png)no-repeat;
+	background-size: 20% 100%;
+	border-left: 2px solid #e8bf5d;
+	padding: 0 20px;
+}
+/*==========06) About Us Section End==========*/
+
+/*==========07) Practice Area Section Start==========*/
+#practice-area, 
+#clients,
+#faq{
+	background-color: #1C1A1A;
+}
+#practice-area h4{
+	color: #ffffff;
+}
+/*==========07) Practice Area Section End==========*/
+
+/*==========08) Lawyers Section Start==========*/
+#lawyers .card{
+	transition: all 0.7s ease;
+}
+#lawyers .card:hover{
+	cursor: pointer;
+	box-shadow: var(--box-shadow);
+	transform: scale(1.1);
+}
+#lawyers .card-body{
+	padding: 5px;
+}
+#lawyers .card-body p{
+	margin-bottom: 5px;
+}
+/*==========08) Lawyers Section End==========*/
+
+/*==========09) Clients Section Start==========*/
+#clients .clients-img {
+	box-shadow: 15px 15px 0px #e8bf5d;
+}
+#clients .owl-theme .owl-dots .owl-dot.active span,
+#clients .owl-theme .owl-dots .owl-dot:hover span {
+	background: #e8bf5d !important;
+}
+/*==========09) Clients Section End==========*/
+
+/*==========10) Publications Section Start==========*/
+#publications .card-body h4{
+	margin-bottom: 0;
+}
+#publications .card-text{
+	padding: 8px;
+}
+#publications .card .card-footer{
+	display: flex;
+	justify-content: space-between;
+}
+/*==========10) Publications Section End==========*/
+
+/*==========11) FAQ Section Start==========*/
+#one,
+#two,
+#three,
+#four,
+#five,
+#six {
+	border-bottom: 2px solid #e8bf5d;	
+}
+.faq-content-2{
+	background-color: #e8bf5d !important;
+	color:#000;
+	font-weight: 500;
+}
+/*==========11) FAQ Section End=========*/
+
+/*==========12) Contact Section Start==========*/
+.form-control {
+	border: none;
+	border-bottom: 1px solid #999;
+	margin-bottom: 10px;
+	padding: 15px 1px;
+	outline: none;
+}
+#message{
+	padding:50px 0;
+}
+.form .btn {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 20px;
+	background-color: #e8bf5d;
+	border: none;
+	color: #111;
+}
+.form .btn:hover {
+	background-color:#111 ;
+	color:#e8bf5d ;
+}
+.map {
+	box-shadow: -25px 25px 1px #e8bf5d;
+}
+/*==========12) Contact Section End========*/
+
+/*==========13) Footer Section Start==========*/
+/*==========13) Footer Section End==========*/
+
+
+/*=========Media Query Start========*/
+@media (max-width: 991px){
+	#hero .hero-content .offset-md-2{
+		margin: 0 auto;
+	}
+}
+@media ( max-width: 767px){
+	#hero .hero{
+		background-size: contain;
+	}
+	#hero .hero-heading {
+		color: #111111 !important;
+	}
+	#about-us .expertise{
+		margin-top: 25px;
+	}
+	#lawyers .downteam{
+		margin-top: 15px;
+	}
+	#clients .clients{
+		margin-right: 145px;
+		margin-bottom: 15px;
+	}
+	#publications .pbl{
+		margin-top: 15px;
+	}
+	#publications .publication-card{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+	}
+	#contact .map-frame{
+		margin-left: 135px;
+		margin-top: 20px;
+	}
+}
+
+@media ( max-width: 575px){
+	#lawyers .card {
+	margin:10px auto;
+	width: 60%;
+	}
+	#clients .clients{
+		width: 60%;
+		margin: 0 auto;
+	}
+	#publications .card-footer{
+		padding: 0;
+	}
+	#contact iframe {
+		display: none;
+	}
+	#contact .map-frame {
+		margin: 0 auto;
+		width: 60%;
+	}
+	#contact .map{
+		margin-top: 20px;
+	}
+	
+}
+
+@media (max-width: 380px){
+	header .navbar-brand{
+		text-align:center;
+	}
+	header .navbar-toggler{
+		margin: 0 auto;
+	}
+}
+/*==========Media Query End==========*/
