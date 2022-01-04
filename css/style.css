@@ -49,12 +49,6 @@
 	/* Alegreya */
 	--Alegreya:'Alegreya', cursive;
 	
-	/* Anton */
-	--Anton:'Anton', cursive;
-	
-	/* Cormorant */
-	--Cormorant:'Cormorant', cursive;
-
 	/* Inconsolata */
 	--Inconsolata:'Inconsolata', cursive;
 	
@@ -64,26 +58,6 @@
 	/* Lexend */
 	--Lexend:'Lexend', cursive;
 
-	/* Literata */
-	--Literata:'Literata',cursive;
-
-	/* Livvic */
-	--Livvic:'Livvic', cursive;
-
-	/* Overlock */
-	--Overlock:'Overlock', cursive;
-
-	/* Rancho */
-	--Rancho:'Rancho', cursive;
-
-	/* Roboto */
-	--Roboto:'Roboto', cursive;
-
-	/* Sriracha */
-	--Sriracha:'Sriracha', cursive;
-
-	/* Ubuntu */
-	--Ubuntu:'Ubuntu', cursive;
 }
 /*==========02) Variable Section End==========*/
 
